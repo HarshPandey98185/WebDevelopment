@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 4, 2017 9:59:00 PM by Hibernate Tools 5.2.1.Final -->
+<hibernate-mapping>
+    <class name="neu.edu.entity.UserAccount" table="user_account" catalog="assignment9" optimistic-lock="version">
+        <id name="userId" type="java.lang.Integer">
+            <column name="userID" />
+            <generator class="identity" />
+        </id>
+        <property name="firstName" type="string">
+            <column name="firstName" length="20" />
+        </property>
+        <property name="lastName" type="string">
+            <column name="lastName" length="20" />
+        </property>
+        <property name="userName" type="string">
+            <column name="userName" length="45" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" length="45" />
+        </property>
+        <property name="dateOfBirth" type="string">
+            <column name="dateOfBirth" length="45" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="45" />
+        </property>
+        <property name="mobileNumber" type="string">
+            <column name="mobileNumber" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>
